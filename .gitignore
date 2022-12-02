@@ -8,3 +8,6 @@ data/batches/*
 # Spark job results
 data/output/
 /logs/*
+
+# zeppelin notebook
+*.zpln
