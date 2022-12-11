@@ -18,7 +18,7 @@ in one command. This is how this repository came to be!
 运行 ubuntu 版本的集群
 ```
 docker-compose -f docker-compose.ubuntu.yml up -d
-```bash
+```
 
 ## ABOUT VERSION
 
