@@ -6,15 +6,13 @@ namely those found in Amazon EMR.
 Ideally, that would be something that can be brought up and torn down
 in one command. This is how this repository came to be!
 ## Development
-我略微改了一下 `docker-compose.yml` , 原来那个版本的有依赖了错误的包
-没有检查过下面的几个软件的版本正确性
 有两个文件夹可以已经被挂载在集群中用于共享数据，`data_share` 只挂载在了 master 节点中，`data`挂载在了所有的 hadoop-spark 节点里。
 
 在执行 `docker-compose up -d` 之前，最好先把 `docker-compose.yml` 中依赖的 image 都下下来，包括：
 - postgres:11.5
 - zookeeper
-- lisacumt/hadoop-hive-hbase-spark-docker:1.1.6 
-  > 这个包装起来会比较慢
+- duhaode520/bigdata_app:1.0
+  > 这个包装起来会比较慢, 可以直接从这个 image 的 [dockerfile](https://github.com/duhaode520/hadoop-hive-hbase-spark-docker) 进行 build
 - lisacumt/zeppelin-bigdata-docker:1.1.6
 
 ## ABOUT VERSION
