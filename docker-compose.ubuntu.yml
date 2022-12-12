@@ -95,7 +95,7 @@ services:
       - "zoo3:172.28.1.13"
       
   master:
-    image: bigdata_app:1.0
+    image: duhaode520/bigdata_app:1.1
 #    build: '../hadoop-hive-spark-docker'
     hostname: master
     depends_on:
@@ -190,7 +190,7 @@ services:
 
   worker1:
     # image: lisacumt/hadoop-hive-hbase-spark-docker:1.1.6
-    image: bigdata_app:1.0
+    image: duhaode520/bigdata_app:1.1
 #    build: '../hadoop-hive-spark-docker'
     hostname: worker1
     depends_on:
@@ -243,7 +243,7 @@ services:
 
   worker2:
     # image: lisacumt/hadoop-hive-hbase-spark-docker:1.1.6
-    image: bigdata_app:1.0
+    image: duhaode520/bigdata_app:1.1
 #    build: '../hadoop-hive-spark-docker'
     hostname: worker2
     depends_on:

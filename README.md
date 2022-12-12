@@ -11,7 +11,7 @@ in one command. This is how this repository came to be!
 在执行 `docker-compose up -d` 之前，最好先把 `docker-compose.yml` 中依赖的 image 都下下来，包括：
 - postgres:11.5
 - zookeeper
-- duhaode520/bigdata_app:1.0
+- duhaode520/bigdata_app:1.1
   > 这个包装起来会比较慢, 可以直接从这个 image 的 [dockerfile](https://github.com/duhaode520/hadoop-hive-hbase-spark-docker) 进行 build
 - lisacumt/zeppelin-bigdata-docker:1.1.6
 
